@@ -34,6 +34,7 @@ public class TestCases_Leave extends BaseClass {
 		
 		//step 5 : Logout
 		home.Logout();
+		//logout
 	}
 	
 	
