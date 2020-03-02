@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.tm.TestCases.TestCases_Leave">
+        <methods>
+          <include name="TC102_ApplyLeave"/>
+          <include name="closeBrowser"/>
+          <include name="TC101_verifyLoginFunctionality"/>
+          <include name="launchBrowser"/>
+          <include name="TC103_FilterAndVerifyLeaveStatus"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- com.tm.TestCases.TestCases_Leave -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
