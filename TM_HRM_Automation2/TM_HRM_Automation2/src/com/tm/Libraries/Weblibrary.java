@@ -241,5 +241,22 @@ public class Weblibrary extends BaseClass {
 			
 		}
 	}
+//=================================================================================
+		public static boolean radioButton(WebElement element) {
 
-}
+			boolean status = false;
+			try {
+				element.isDisplayed();
+				status=true;
+			} 
+			catch (Exception e) 
+			{
+				status = false;
+			}
+
+			return status;
+
+		}	
+	}
+
+

@@ -27,9 +27,12 @@ public class Login extends Weblibrary {
 		status=launchApplication(appURL);
 		logEvent(status, "Application launched Sucessfully", "Unable to launch the Application");
 		
+		//status = isExist(Edit_UserName);
+		//logEvent(status, "Username field displayed", "Username field not displayed ");
+		
 		status = setText(Edit_UserName, uid);
 		logEvent(status, "Username enter Sucessfully", "Unable to enter Username ");
-	
+		
 		status = setText(Edit_Password, pwd);
 		logEvent(status, "Password enter Sucessfully", " unable to enter Password ");
 		

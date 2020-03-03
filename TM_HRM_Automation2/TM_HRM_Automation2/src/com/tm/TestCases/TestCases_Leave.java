@@ -33,8 +33,8 @@ public class TestCases_Leave extends BaseClass {
 		myleave.VerifyStatus_ResultTable(data[2]);
 		
 		//step 5 : Logout
-		home.Logout();
-		//logout
+		home.Logout(); 
+		
 	}
 	
 	
