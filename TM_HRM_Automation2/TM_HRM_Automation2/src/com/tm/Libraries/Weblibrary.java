@@ -37,38 +37,41 @@ public class Weblibrary extends BaseClass {
 		}
 		return status;
 	}
-
+//========================================================================================
 	/*
 	 * Method Name : setText
 	 * 
-	 * Description : This method is used to send the data to input text field
+	 * Description : This method is used to send the input to input text field
 	 * 
-	 * Input:: WebElement and text Data
-	 * 
-	 * Output: boolean status
-	 * 
-	 * Author : Testing Masters Technologies
-	 * 
-	 * 
-	 * 
+	 * parameters:
+	 *            element - it is a webelement(Text field)
+	 *            value - it is a input data to enter into text field
+	 * Author : vamsi A
+	 * Creation date:
+	 * Modified date;
+	 * Modified by:
+	 * Change comment:
 	 */
 
 	public static boolean setText(WebElement element, String value) {
-		boolean status;
+		boolean blnstatus;
 
 		try {	
 			highlight(element);
-			element.click();
 			element.clear();
 			element.sendKeys(value);
-			status = true;
+			String appvalue = element.getAttribute("value");
+			if(appvalue.equals(value))
+			blnstatus = true;
+			else
+				blnstatus = false;
 		} 
 		catch (Exception e) 
 		{
-			status = false;
+			blnstatus = false;
 		}
 
-		return status;
+		return blnstatus;
 
 	}
 
@@ -87,7 +90,7 @@ public class Weblibrary extends BaseClass {
 	 * 
 	 * 
 	 */
-
+//=================================================================================================
 	public static boolean setTextandEscape(WebElement element, String value) {
 		boolean status;
 
