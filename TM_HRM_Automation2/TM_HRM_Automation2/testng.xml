@@ -8,6 +8,7 @@
 	        <include name="TC101_verifyLoginFunctionality"/> 
 	       	<include name="TC102_ApplyLeave"/> 
 	       	<include name="TC103_FilterAndVerifyLeaveStatus"/>
+	       	<include name="TC104_Immigration"/>
 	       	   	
 	      </methods>
    	 </class>    

@@ -8,35 +8,66 @@ import com.tm.Libraries.Weblibrary;
 public class MyInfoContact extends Weblibrary {
 
 	@FindBy(xpath = "//a[text()='ContactDetails']")
-    public static WebElement contact_details;
+    private static WebElement contact_details;
 	
 	@FindBy(xpath = "//input[@id='btnSave']")
-    public static WebElement edit_details;
+	private static WebElement edit_details;
 	
 	@FindBy(xpath = "////input[@id='Contact_street1']")
-    public static WebElement Contact_street1;
+	private static WebElement Contact_street1;
 	
 	@FindBy(xpath = "//input[@id='Contact_city']")
-    public static WebElement Contact_city;
+	private static WebElement Contact_city;
 	
 	@FindBy(xpath = "//input[@id='Contact_province']")
-    public static WebElement Contact_province;
+	private static WebElement Contact_province;
 	
 	@FindBy(xpath = "//input[@id='Contact_emp_zipcode']")
-    public static WebElement contact_zip;
+	private static WebElement contact_zip;
 	
 	@FindBy(xpath = "//input[@id='Contact_country']")
-    public static WebElement contact_country;
+	private static WebElement contact_country;
 	
 	@FindBy(xpath = "//input[@id='Contact_emp_hm_telephone']")
-    public static WebElement contact_telephone;
+	private static WebElement contact_telephone;
 	
 	@FindBy(xpath = "//input[@id='Contact_emp_work_email']")
-    public static WebElement contact_email;
+	private static WebElement contact_email;
 	
 	@FindBy(xpath = "//input[@id='btnSave']")
-    public static WebElement add_details;
+	private static WebElement add_details;
 	//===========================================================================================
+	public static WebElement getContact_details() {
+		return contact_details;
+	}
+public static WebElement getEdit_details() {
+		return edit_details;
+	}
+	public static WebElement getContact_street1() {
+		return Contact_street1;
+	}
+	public static WebElement getContact_city() {
+		return Contact_city;
+	}
+	public static WebElement getContact_province() {
+		return Contact_province;
+	}
+	public static WebElement getContact_zip() {
+		return contact_zip;
+	}
+	public static WebElement getContact_country() {
+		return contact_country;
+	}
+	public static WebElement getContact_telephone() {
+		return contact_telephone;
+	}
+	public static WebElement getContact_email() {
+		return contact_email;
+	}
+	public static WebElement getAdd_details() {
+		return add_details;
+	}
+//===============================================================================================
 	public static void MyInfo(){
 		boolean status;
 		

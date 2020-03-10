@@ -8,27 +8,47 @@ import com.tm.Libraries.Weblibrary;
 public class MyInfoDependent extends Weblibrary{
 	
 	@FindBy(xpath = "//a[text()='Dependents']")
-    public static WebElement dependents;
+    private static WebElement linkDependents;
 	
 	@FindBy(xpath = "//input[@id='btnAddDependent']")
-    public static WebElement add_dependent;
+	private static WebElement add_dependent;
 	
 	@FindBy(xpath = "//input[@id='dependent_name']")
-    public static WebElement dependent_name;
+	private static WebElement dependent_name;
 	
 	@FindBy(xpath = "//select[@id='dependent_relationshipType']")
-    public static WebElement dependent_relation;
+	private static WebElement dependent_relation;
 	
 	@FindBy(xpath = "//input[@id='dependent_dateOfBirth']")
-    public static WebElement date_Of_birth;
+	private static WebElement date_Of_birth;
 	
 	@FindBy(xpath = "//input[@id='btnSaveDependent']")
-    public static WebElement save_button;
+	private static WebElement save_button;
 	//=====================================================================================
+	public static WebElement getLinkDependents() {
+		return linkDependents;
+	}
+	public static WebElement getAdd_dependent() {
+		return add_dependent;
+	}
+	public static WebElement getDependent_name() {
+		return dependent_name;
+	}
+	public static WebElement getDependent_relation() {
+		return dependent_relation;
+	}
+	public static WebElement getDate_Of_birth() {
+		return date_Of_birth;
+	}
+	public static WebElement getSave_button() {
+		return save_button;
+	}
+	
+	//======================================================================================
 	public static void MyInfo(){
 		boolean status;
 		
-		status = clickElement(dependents);
+		status = clickElement(linkDependents);
 		logEvent(status, "Clicked on dependents", " Not clicked on dependents");
 		
 		status = clickElement(add_dependent);
